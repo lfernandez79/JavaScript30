@@ -39,12 +39,12 @@ body,html {
 }
 
 kbd {
-  display: block;
+  display:block;
   font-size: 4rem;
 }
 
 .sound {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: .1rem;
   color: #ffc600;
