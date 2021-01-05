@@ -59,7 +59,11 @@
 <script>
   addEventListener("keydown", function (e) {
    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`)
-   console.log(audio)
+   const key = document.querySelector(`.key[data-key="${e.keyCode}"]`)
+   if(!audio) return; // if there is no audio , stop function
+   audio.currentTime = 0; // rewind to start when key is press again
+   audio.play() //otherwise play  audio
+   key.classList.add("playing")
   })
 </script>
 
